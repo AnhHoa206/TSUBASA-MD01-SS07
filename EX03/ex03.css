@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 6px;
+    padding: 15px;
+    border: 2px solid black;
+    max-width: 900px;
+}
+.flex-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    background-color: rgb(59, 134, 70);
+    color: white;
+    border-radius: 4px solid black;
+}
+.large{
+    width: calc(50%-20px);
+    grid-column: span 2;
+}
